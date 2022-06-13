@@ -1,0 +1,83 @@
+				Welcome To Angular Module 8
+				  Sumit Raokhande
+				  
+- April OJT 2022
+- Session time 2.30pm i will give 5 min buffer ti,e 
+- duration of time is 1.15min avg max 1.30min/ 1hr => 10 min doubt solving
+- minimum duration is 55hrs 
+- Monday to Friday
+- stat. doubt solving session 2.30 => 1.15 min
+- recoding access daily available 
+- Recording will be available max 4 days after 4 days it is auto deeted 
+- angular project 10-15 days 
+- timely connect sharp 2.30 pm   
+- Angular ke sare code apako mein share kar dunga except images 
+- Two way communication is required 
+- Interview Question provide 
+- Basic of Html & css 
+- OOPs concept is mandatory 
+- Typescript => how to integrate js in ts 
+- Angular 8 
+
+
+	Employee => one to one mapping country 
+	Employee
+		id;
+		name;
+		emailid;
+		mobile no;
+		gender;
+		department;
+		status;
+		createddate;
+		createdBy;
+		UpdatedDate;
+		UpdateBy;
+		country;
+		
+	Country
+		cname;
+		cid;
+		
+	Api List
+	1 getAllCountry
+	2 getParticularCountry
+	3 updateCountry
+	4 DeleteCountry
+	5 addCountry
+	6 GetAllEmployee
+	7 GetParticularEmployee
+	8 UpdateEmployee
+	9 DeleteEmployee
+	10 AddEmployee
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
