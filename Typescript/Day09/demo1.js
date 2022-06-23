@@ -1,0 +1,86 @@
+//Array of Object
+var arrobj = [
+    {
+        id: 9,
+        fname: 'Sumit',
+        lname: 'Raokhande',
+        month: ["Jan", "Feb", "Dec"],
+        country: {
+            cid: 1,
+            cname: 'India'
+        },
+        result: [
+            {
+                subj: "M1",
+                marks: "40"
+            },
+            {
+                subj: "M2",
+                marks: "45"
+            },
+            {
+                subj: "M3",
+                marks: "55"
+            }
+        ]
+    },
+    {
+        id: 3,
+        fname: 'Spruha',
+        lname: 'Raokhande',
+        month: ["June", "May", "Dec"],
+        country: {
+            cid: 2,
+            cname: 'Japan'
+        },
+        result: [
+            {
+                subj: "M1",
+                marks: "50"
+            },
+            {
+                subj: "M2",
+                marks: "65"
+            },
+            {
+                subj: "M3",
+                marks: "75"
+            }
+        ]
+    },
+    {
+        id: 6,
+        fname: 'Kiran',
+        lname: 'Raokhande',
+        month: ["Dec", "Feb", "Aug"],
+        country: {
+            cid: 3,
+            cname: 'US'
+        },
+        result: [
+            {
+                subj: "M1",
+                marks: "50"
+            },
+            {
+                subj: "M2",
+                marks: "45"
+            },
+            {
+                subj: "M3",
+                marks: "75"
+            }
+        ]
+    }
+];
+// console.log(`
+//     ID         :: ${arrobj[1].id}
+//     First Name :: ${arrobj[1].fname}
+//     Last Name  :: ${arrobj[1].lname}
+// `)
+for (var i = 0; i < arrobj.length; i++) {
+    console.log("\n    ID         :: ".concat(arrobj[i].id, "\n    First Name :: ").concat(arrobj[i].fname, "\n    Last Name  :: ").concat(arrobj[i].lname, "\n    Month      :: ").concat(arrobj[i].month.join('  '), "\n  Country Name :: ").concat(arrobj[i].country.cname, "\n  ---------------Result------------\n"));
+    for (var j = 0; j < arrobj[i].result.length; j++) {
+        console.log("\n          Subject :: ".concat(arrobj[i].result[j].subj, "\n          Marks   :: ").concat(arrobj[i].result[j].marks, "\n    "));
+    }
+}
