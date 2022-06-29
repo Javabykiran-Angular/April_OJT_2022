@@ -1,0 +1,59 @@
+Last Lecture
+1 Angular Environment setup
+
+Today's Lecture
+1 Arch. Overview
+	- It is Component orientated Arch
+	- component has minimum 3 files
+		1 view file .html
+		2 stylesheet file .css
+		3 Component file .ts
+		4 specs.ts => testing file 
+	- component has metadata
+		- it gives extra information about component
+		@Component({
+			selector:....,
+			templateUrl:'./sdkhkh',
+			StyleUrls:[]
+		})
+	- every component has 1 view file & 1 ts file 
+	- every component has multiple css file 
+	* Data Binding
+		- it flows/send data from component file to view file
+		- Types
+			1 String interpolation
+			2 Property Binding
+			3 Style Binding
+			4 Class Binding
+	* Event Binding
+		- it flows/send data/request from view file to component file
+		- click,change,keyboard,mouseevent,custom event
+	* directive
+		- u can change ur dom structure behaviour dynamically
+		- attribute,structure,component,event 
+		- ngStyle,ngClass,ngModel
+		- *ngIf,*ngFor,*ngSwitch
+	* App Module
+		- component declaration
+			- component register
+			- it creates factory class=> it holds the object information of that component. 
+		- import module
+			- It is collection of classes,interface,method,variable,enum,component,services
+			
+		- services => providers
+			- It is simple class 
+		- Routing
+			- it is navigation between component
+	* Injector
+		- 3rd services like notification,
+		- http 
+	
+	
+
+
+
+
+
+
+
+
