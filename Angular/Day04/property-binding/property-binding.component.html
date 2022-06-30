@@ -1,0 +1,40 @@
+<p>property-binding works!</p>
+
+<!-- syntax => [html attribute/directive/custom attribute]="Propertyname" 
+  u can apply ant attribute
+-->
+<input type="text" [value]="name"> <br><br>
+
+<img [src]="imgUrl" alt="Internet Issue">
+<br><br>
+<!-- <table border="1px">
+  <tr>
+    <td colspan="2">Merge</td>
+  </tr>
+  <tr>
+    <td>One </td>
+    <td>Two</td>
+  </tr>
+</table> -->
+
+<!-- <table border="1px">
+  <tr>
+    <td [attr.colspan]="colspanSize">Merge
+
+    </td>
+  </tr>
+  <tr>
+    <td>One </td>
+    <td>Two</td>
+  </tr>
+</table> -->
+<hr>
+<div hidden=" {{isHidden}} ">
+ <h2>String Interpolation </h2> 
+</div>
+
+<div [hidden]="isHidden">
+  <h2>Property binding </h2> 
+ </div>
+
+
