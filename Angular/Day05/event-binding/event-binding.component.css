@@ -1,0 +1,7 @@
+.imgClass{
+  width: 250px;
+  height: 250px;
+  border: 2px solid rebeccapurple;
+  border-radius: 10px;
+  cursor: pointer;
+}
