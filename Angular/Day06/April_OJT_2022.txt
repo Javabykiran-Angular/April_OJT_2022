@@ -1,0 +1,75 @@
+Last Lecture
+1 Class Binding 
+	[class]="PropertyName"
+	
+	<h1 [class]="myclass">Apply class binding
+	<h1 [class.success]="rating<4"
+		[class.danger]="rating>4">
+	
+	div [ngClass]=""
+	
+	.ts file
+	iserror:boolean=true;
+	myclass:string='success';
+	jsonobj={
+		'success':!this.iserror,
+		'danger': this.iserror,
+		'special':this.isspecial
+	}
+	
+2 ngClass
+3 Event Binding
+	data flow from view to component
+	
+	(eventName)="Eventhandler()"
+	
+	<button (click)="onClick()" >click
+	<img (click)="onImgClick()"> 
+	
+	.ts file
+	onClick(){
+		console.log("click event occur")
+	}
+	
+	onImgClick(){
+	
+	}
+	
+4 click
+
+Today's Lecture
+1 $event
+2 template ref variable
+3 Real time example
+4 Change event
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
