@@ -1,0 +1,30 @@
+<p>event-binding1 works!</p>
+
+<!-- $event => 
+  IT IS SPECIAL VARIABLE GIVEN BY Angular
+  it gives current Dom Element Information 
+-->
+
+<!-- <button value="Doller Event Occur" (click)="onClick($event)" >Click</button> -->
+
+<!-- template reference variable
+  it return a object/handle of html element
+-->
+<!-- 
+<input #inputname type="text" placeholder="Enter the name "> <br><br>
+<button (click)="onSend(inputname)" >Send</button>
+<hr>
+
+<input #inputname1 type="text" placeholder="Enter the name "> <br><br>
+<button (click)="onSend1(inputname1.value)" >Send</button> <hr>
+
+<input #inputname2 type="text" placeholder="Enter the name "> <br><br>
+<button (click)="onSend2(inputname2)" >Send</button> -->
+
+<!-- <input #num1 type="number" placeholder="Enter the Num1 "  > <br><br>
+<input #num2 type="text" placeholder="Enter the Num2 "> <br><br>
+<button (click)="onAddition(num1.value,num2.value)" >Addition</button> <br><br>
+<input type="text" placeholder="Result" [value]="result"> <br><br> -->
+
+<input type="text" #myname (change)="onChange(myname)"
+placeholder="Enter the name...">
