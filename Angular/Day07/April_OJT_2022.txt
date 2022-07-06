@@ -1,0 +1,76 @@
+Last Lecture
+1 $event
+	- it is special variable given by angular
+	- it gives current dom element info.
+	- only gives info but u can not manipulate
+	<button (click)="onClick($event)">
+	.ts file
+	
+	onClick(event){
+		console.log(event.target.value);
+	}
+2 template ref variable
+	- it can manipulate a data
+	<input #inputname >
+	<button (click)="onClick(inputname)">
+	.ts file
+	onClick(name){
+		console.log(name.value)
+		name.style.background='red';
+		
+	}
+3 Real time example
+	<input #num1 >
+	<input #num2>
+	<button (click)="onAddition(num1.value,num2.value)"
+	<input [value]="result">
+	.ts file
+	onAddition(num1,num2){
+		let n1=+num1;
+		let n2=+num2;
+		this.result=n1+n2;
+	}
+4 Change event
+	<input (change)="onChange()">
+
+Today's Lecture
+1 key up 
+2 key down
+3 enter key
+4 event binding without event handler
+5 Two way Binding=> ngModel => it is attribute directive
+	FormsModule
+	[(ngModel)]=>banna in the box 
+	[(ngModel)]="name"
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+

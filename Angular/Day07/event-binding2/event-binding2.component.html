@@ -1,0 +1,29 @@
+<p>event-binding2 works!</p>
+
+
+<input type="text" (keyup)="onKeyUp()" placeholder="keyup event..."> <br><br>
+<input type="text" (keydown)="onKeyDown()" placeholder="keydown event..."> <br><br>
+<input type="text" (keyup.enter)="onKeyEnter()" placeholder="key Enter event..."> <br><br>
+
+<button (click)="result=2+2" >Addition</button>
+<h2>Addition is :: {{result}} </h2>
+<hr>
+<h2>Apply ngModel Directive</h2>
+
+<input type="text" placeholder="Enter the Name " [(ngModel)]="name">
+
+<h2> {{name}} </h2> <br><br>
+
+<!-- <select name="" id="" [(ngModel)]="mycourse" (click)="onSelect()"> -->
+  <select name="" id="" [(ngModel)]="mycourse"  (change)="onSelect()">
+  <option value="">Select Course</option>
+  <option value="corejava">Core Java</option>
+  <option value="advancedjava">Advanced Java</option>
+  <option value="springboot">Spring Boot </option>
+  <option value="jsp">JSP</option>
+  <option value="angular8">Angular 8 </option>
+</select> <br><br>
+
+<button (click)="onCourseSelect()">Select</button>
+
+<h2> {{mycourse}} </h2>
