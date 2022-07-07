@@ -1,0 +1,73 @@
+Last Lecture
+1 key up 
+	<input (keyup)="onKeyup()">
+	
+	.ts file
+	onKeyup(){
+	.....
+	}
+2 key down
+<input (keydown)="onKeydown()">
+
+
+3 enter key
+	<input (keyup.enter)="onEnter()">
+4 event binding without event handler
+	result:number=0;
+	<buton (click)="result=2+2" >
+	{{result}}
+5 Two way Binding=> ngModel => it is attribute directive
+	FormsModule
+	[(ngModel)]=>bannana in the box 
+	[(ngModel)]="name"
+	
+	<input [(ngModel)]="name">
+	{{name}}
+	.ts 
+	name:string='';
+
+Today's Lecture
+1 Structral Directive
+	- to change ur dom structure behaviour 
+	1 *ngIf
+	2 *ngFor
+	3 *ngSwitch
+2 if directive
+3 For directive
+4 Mouse event 
+	mouseover
+	mouseout
+5 ng-template => It is component directive 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
