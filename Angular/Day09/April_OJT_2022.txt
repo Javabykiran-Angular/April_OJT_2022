@@ -1,0 +1,98 @@
+Last Lecture
+1 Structral Directive
+	- to change ur dom structure behaviour 
+	1 *ngIf
+	2 *ngFor
+	3 *ngSwitch
+2 if directive
+	div *ngIf="rating<4;else myelse">
+		<h2> Condition true
+	</div>
+	
+	<ng-template #myelse>
+		
+		<h2> Condition is false
+	</ng-template>
+		
+		.ts file
+		rating:number=2;
+3 For directive
+	
+		<ul>
+			<li *ngFor="let item of course;index as i">
+			{{i+1}} {{item}}
+			<li>
+		</ul>
+		
+		.ts file
+		arrproduct=[
+		{
+			name:'d',
+			price:25000,
+			quantity:1
+		}
+		]
+		
+		table
+			thead
+				th> Name
+				....
+			</thead>
+			<tbody>
+				tr *ngFor="let item of arrproduct" 
+					(mouseover)="onMouseOver(item)"
+					[ngClass]="{'highlight':selected==item.name }"
+					(mouseout)="onmouseOut()"
+					td> {{item.name}}
+					td
+					td
+			</tbody>
+.ts file
+		onMouseOver(item){
+			this.selected=item.name;
+		}
+		
+		onmouseOut(){
+			this.selected='';
+		}
+		
+4 Mouse event 
+	mouseover
+	mouseout
+5 ng-template => It is component directive
+
+Today's Lecture
+1 ngSwitch directive
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
