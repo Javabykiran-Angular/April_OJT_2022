@@ -1,0 +1,53 @@
+Last Lecture
+1 ngSwitch directive
+	<input #inputcolor placeholer="Enter the color name " type="text">
+	<button (click)="onSend(inputcolor.value)"> Send
+	div [ngSwitch]="choice">
+		div *ngSwitchCase="'red'" [style.background]="choice"> Your color name is {{choice}}
+		div *ngSwitchCase="'green'" [style.background]="choice"> Your color name is {{choice}}
+		
+		div *ngSwitchdefault [style.background]="choice==''?'black':'orange'"> Your color name is wrong {{choice}}
+.ts file
+	onSend(colorname:string){
+		this.choice=colorname.toLowerCase().trim();
+	}
+Today's Lecture
+1 Component interaction
+	- it is only send a data(string/number/boolean/array/array of object) from one component to another component
+	- parent-child relationship
+	
+2 @Input
+3 @Output
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
