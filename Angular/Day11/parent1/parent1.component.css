@@ -1,0 +1,22 @@
+
+.box{
+  border: 1px solid darkblue;
+  border-radius: 8px;
+  background-color: darkgreen;
+  color: wheat;
+  padding: 8px;
+  font-size: 25px;
+  
+}
+
+.divclass{
+  margin-top: 10px;
+  border: 2px dashed darkmagenta;
+  width: 600px;
+}
+
+button{
+  margin: 10px;
+  padding: 8px;
+  border-radius: 8px;
+}

@@ -1,0 +1,96 @@
+Last Lecture
+1  Component interaction
+	- it is only send a data(string/number/boolean/array/array of object) from one component to another component
+	- parent-child relationship
+	
+2 @Input
+	=> It is use to send data from parent to child 
+	parent.html
+		<app-child1 [ParentStrdata]="strdata"
+					[ParentJsonData]="jsonobj"
+		>
+		
+	parent.ts
+	strdata:string='.....'
+	jsonobj={
+	.....
+	}
+	
+	child1.ts
+	@Input() ParentStrdata:string='';
+	
+	@input() ParentJsonData={};
+	
+	child1.html
+	{{ParentStrdata}}
+	{{ParentJsonData.id}}
+	
+	
+	
+3 @Output
+=> It is used to send data from child to parent
+	parent.ts
+		ChildStrData:string='';
+
+	parent.html
+	{{ChildStrData}}
+	
+	<app-child2 (ChildStrEvent)="ChildStrData=$event">
+	
+	child2.ts
+		@Output() ChildStrEvent=new EventEmitter();
+		strdata=",hhjdfbkjh";
+		
+		onClick(){
+			this.ChildStrEvent.emit(this.strdata)
+		}
+		
+		child.html
+		button (click)="onClick()"
+		//arrobj=[];
+
+Today's Lecture
+1 @ViewChild
+	1 u can access ur own view with help of template refe.variable
+	2 u can access child property as well as method in parent component
+	
+2 ngAfterViewInit
+	=> it is life cycle hook of component
+3 ngOnInit()
+	=> it is life cycle hook of component
+4 Access template Ref variable in same component using ViewChild
+5 Access Method & property of child component using ViewChild
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
