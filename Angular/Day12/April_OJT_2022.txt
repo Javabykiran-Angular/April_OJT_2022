@@ -1,0 +1,85 @@
+Last Lecture
+1  @ViewChild
+	1 u can access ur own view with help of template refe.variable
+	2 u can access child property as well as method in parent component
+	
+2 ngAfterViewInit
+	=> it is life cycle hook of component
+3 ngOnInit()
+	=> it is life cycle hook of component
+4 Access template Ref variable in same component using ViewChild
+5 Access Method & property of child component using ViewChild
+
+
+parent.html
+	<div #maindiv>
+		<p>hgddhagbdh
+	</div>
+	
+	<div>
+		button (click)="AccessProperty()"> Property
+		button (click)="AccessMethod()"> Method 
+	
+parent.ts
+	@ViewChild('maindiv',{static:false}) Mydiv:ElemntRef;
+	@ViewChild(Child3Component,{static:false}) child3:Child3Component;
+	
+	ngAfterViewInit(){
+		console.log(this.Mydiv);
+		this.Mydiv.nativeElement.classList='box';		
+	}
+	
+	AccessProperty(){
+		this.child3.username='Spruha Raokhande';
+	}
+	
+	AccessMethod(){
+		this.child3.onClick();
+	}
+
+child.ts
+	username:string='Default value'
+	
+	onClick(){
+		this.username='Sumit Raokhande';
+	}
+	child.html
+	<h2> {{username}}
+	button (click)="onClick()">
+
+
+Today's Lecture
+1 Sanitization in Angular
+2 Content Projection
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+

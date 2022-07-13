@@ -1,0 +1,27 @@
+<p>content-projection works!</p>
+
+<!-- <app-child4 [ParentInputTag]="inpuTag"></app-child4> -->
+
+<!-- <app-child4 [bg]="mybg" [Labelname]="name"
+  [mytype]="'text'" [myPlaceholder]="'Enter the Email Id'"
+  [hintmsg]="'Please Enter the Email Id'"
+>
+
+
+</app-child4> -->
+
+<app-child4 [bg]="mybg"   
+  [hintmsg]="'Please Enter the Email Id'">
+
+  <label for="">Email ID::</label> <br>
+  <input type="text" placeholder="Enter the Email Id "><br>
+
+</app-child4> <br>
+
+<app-child4 [bg]="mybg"   
+  [hintmsg]="'Please Enter the Phone No'">
+
+  <label for="">Phone Number ::</label> <br>
+  <input type="tel" placeholder="Enter the Phone no "><br>
+
+</app-child4>
