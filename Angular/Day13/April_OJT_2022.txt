@@ -1,0 +1,69 @@
+Last Lecture
+1 Sanitization in Angular
+	- first we send one html tag to our child 
+	
+2 Content Projection
+	- u can send a html element to ur child component
+	
+	parent.html
+	<app-child4 [bg]="'myprimary'" [hint]="'Enter the email id'">
+	
+		<label> Email::</label>
+		<input type="text" placeholder="Enter the email">
+	
+	
+	
+	child.html
+	
+	<div class="mydiv {{bg}} ">
+		<ng-content></ng-content>
+		<small> {{hint}}
+	</div>
+	
+	
+	<div class="mydiv {{bg}} ">
+		<div> 
+		<ng-content></ng-content>
+		</div>
+		<div><ng-content></ng-content>
+		</div>
+		<small> {{hint}} </small>
+	</div>
+
+Today's Lecture
+1 Pipe
+	- it transform ur data & render to end use without changing its original value
+2 Inbuild Pipe
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
