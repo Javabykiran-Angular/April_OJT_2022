@@ -1,0 +1,60 @@
+Last Lectureco
+1 Pipe
+	- it transform ur data & render to end use without changing its original value
+2 Inbuild Pipe
+	<h2> {{strdata | lowercase}}
+	uppercase,titlecase
+	<h2> {{strdata | slice:1:2}}
+	<h2> {{0.25 | percent}}
+	<h2> {{0.25 | percent:'1.1'}}
+	<h2> {{0.25 | currency:'INR':'code'}}
+	
+	<h2> {{5.678985 | number:'1.2-3'}}
+	<h2> {{mydate | date:'longDate'}}
+	<h2> {{mydate | date:'mediumDate'}}
+	<h2> {{mydate | date:'dd-MM-yyyy'}}
+	<h2> {{mydate | date:'longDate'|uppercase}}
+	<h2> {{mydate | date:'hh:mm:ss'}}
+	
+	
+
+Today's Lecture
+1 Types of Pipe 
+	1 Pure pipe => it is apply only deterministic value 
+	2 impure pipe => non-deterministic value 
+2 Custom Pipe 
+3 PipeTransform=> Interface
+4 transform()
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
