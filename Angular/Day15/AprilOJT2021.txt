@@ -1,0 +1,145 @@
+Last Lecture
+1 Project
+
+Today's Lecture
+1 
+
+
+
+Change Status
+ emp => Active => inActive
+		Inactive=> Active
+		suspended => no action to be perform
+	
+	@GetMapping("/changeStatus/{id}")
+	public String EmpChangeStatusbyId(@pathvariable int id ){
+			
+			//call service=> empChangeStatusbyId(id);
+	}
+	
+	
+service.java
+String empChangeStatusbyId(int id){
+String msg;
+		employee e=dao.getempbyid(id);
+		String status=e.getStatus();
+		if(status.equalignorecase("active")){
+			
+			e.setStatus("Inactive");
+			dao.updateemployee(e);
+			msg="Employee status change successfully..."
+			
+		}else if(status.equalignorecase("inactive")){
+			e.setStatus("active");
+			dao.updateemployee(e);
+			msg="Employee status change successfully..."	
+		}else{
+			msg="Employee is already suspended";
+		}
+}
+
+dao.java
+ employee getempbyid(id){
+ 
+ return emp;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
