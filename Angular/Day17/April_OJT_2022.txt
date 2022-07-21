@@ -1,0 +1,127 @@
+Last Lecture
+1 What is Http Protocol
+	- it is a set of rules
+	- It is connectionless protocol
+2 Http Methods
+	1 get => fetch a data from backend server to frontend 
+	2 post => Sending a data from frontend to backend server
+	3 put => To update a particular data 
+	4 delete => To delete a particular data
+3 Http Request/Response Parts
+		Http Request has 2 parts 
+			1 Http Header
+				- it contain ip
+				- ContentType
+					- text
+					- image
+					- json
+					- audio
+					- video
+					- html 
+					- pdf 
+				- http method
+				- auth
+				- date
+			2 Http Body
+				- data 
+					json/html/text/xmlformat
+			Http Response 
+			1 Http Header
+				- it contain ip
+				- ContentType
+					-text
+					- image
+					- json
+					- audio
+					- video
+					- html 
+					- pdf 
+				- http method
+				- auth
+				- date
+				- Http Status
+					2xx=> Success,ok
+					3xx=> Redirection 
+					4xx=> Client side error 400,401
+					5xx=> Server side Error
+					
+			2 Http Body
+				- data 
+					json/html/text/xmlformat
+			
+		
+4 https://jsonplaceholder.typicode.com/posts
+	- It is a fake service 
+	- post,put,delete => that data will not store/update/delete in database but it can gives u a response of ur request 
+	
+	ng g s http 
+	
+	
+
+5 @injectable({
+	provideIn:"root"
+})
+export class HttpService{
+	constructor(private http:HttpClient) {
+	}
+	
+	
+	
+	getPost(){
+		return this.http.get(this.url)
+	}
+}
+	post.ts
+	
+	constructor(private service:HttpService){
+	}
+	
+	ngOnInti()
+	{
+		this.service.getPost()
+		.subscribe((response)=>{
+			console.log(response)
+			this.post=(<any> response)
+		})
+	}
+	
+
+6 Observable
+7 get request
+
+Today's Lecture
+1 post
+2 put 
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
