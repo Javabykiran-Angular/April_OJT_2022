@@ -1,0 +1,20 @@
+
+th,tr,td{
+  border: 1px solid;
+}
+
+input{
+  margin: 8px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: lightblue;
+  
+
+}
+
+button{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+
+}

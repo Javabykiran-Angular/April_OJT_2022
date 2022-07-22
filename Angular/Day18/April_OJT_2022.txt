@@ -1,0 +1,99 @@
+Last Lecture
+1 post
+	<input #inputTitle>
+	....
+	<button (click)="onSend(inputTitle.value,inputbody.value)">
+	
+	.ts file
+	onSend(mytitle,mybody){
+		let obj={
+			title:mytitle,
+			body:mybody
+		}
+		this.service.PostData(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+		
+	}
+	
+	.httpservice.ts
+	PostData(obj){
+		return this.http.post(this.url,obj)
+	}
+2 put 
+
+	div [hidden]="isHiiden">
+		<label >id
+		<input [(ngModel)]="id" readonly palceholder="Enter the ID">
+		<label >title
+		<input [(ngModel)]="title" palceholder="Enter the title">
+		...
+		<button (click)="onUpdate()" >Update
+	<div>
+	<button (click)="onEdit(item)">Edit
+	
+	
+	.ts file
+	onEdit(item){
+		this.id=item.id;
+		......
+		this.isHiiden=false;
+	}
+	
+	onUpdate(){
+		let obj={
+			id:this.id,
+			title:this.title,
+			...
+		}
+		
+		this.service.UpadateData(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+		
+		
+	}
+	service.ts
+		UpadateData(obj){
+			return this.http.put(`${this.url}/${obj.id}`,obj)
+		}
+
+Today's Lecture
+1 delete
+2 Error Handle
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
