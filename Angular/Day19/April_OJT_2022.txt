@@ -1,0 +1,75 @@
+Last Lecture
+1 delete
+	<button (click)="onDelete(item.id)" > Delete
+	
+	.ts file
+	
+	onDelete(id){
+		this.service.DeleteData(id)
+		.subscribe((response)=>{
+			console.log(response);
+		},(myerror)=>{
+			if(myerror.status>=400 && myerror<=499){
+			....
+			}else if()
+		})
+	}
+	httpservice.ts 
+	DeleteData(id){
+		return this.http.delete(`${this.url}/${id}`)
+	}
+2 Error Handle
+
+cors policy
+
+@CrossOrigin()
+@RestController
+class EmployeeController{
+
+}
+
+
+Today's Lecture
+1 Routing
+	- navigation from one component to another component
+2 Routing Steps
+	1 configure the route 
+		app-routing.module.ts
+	2 <router-outlet> => tag=> Component directive
+	3 Establish between link(routerLink)/navigate into component
+3 difference between href & routerLink
+4 send parameter 
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
