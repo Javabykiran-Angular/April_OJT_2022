@@ -1,0 +1,78 @@
+Last Lecture
+1 Routing
+	- navigation from one component to another component
+2 Routing Steps
+	1 configure the route 
+		app-routing.module.ts
+		
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			
+			{
+				path:"Page1/:id/:username",component:Page1Component
+			}
+			
+			{
+				path:"**",component:NotFoundComponent
+			}
+		]
+		
+		home.html
+			<a [routerLink]="['/Page1',myid]">Page1
+			...
+			
+			page1.ts
+			private route:ActivtatedRoute
+			
+			GetdataFromUrl(){
+					this.route.ParamMap
+					.subscibe((param)=>{
+						this.myid=+param.get("id")
+					})
+			}
+		
+	2 <router-outlet> => tag=> Component directive
+	3 Establish between link(routerLink)/navigate into component
+3 difference between href & routerLink
+4 send parameter
+
+Today's Lecture
+1 send Query parameter
+2 Dynamic Routing
+3 Child routes
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
