@@ -1,0 +1,100 @@
+Last Lecture
+1 send Query parameter
+	localhost:4200/query?id=3&name=sumit&..
+	<a routerLink="/queryparam" [queryParams]="json">queryparam
+	
+	.ts file
+	json={
+		id:9,
+		name:'sumit',
+		status:'Active'
+	}
+	
+	queryparam.ts
+	private param:ActivatedRoute
+	
+	this.param.QueryParamMap
+	.subcribe((param)=>{
+			this.json.myid=+param.get("id")
+	})
+	
+2 Dynamic Routing
+	private router:Router
+	
+	onPage2(){
+		this.router.navigate(['/Page2',this.myid,this.myusername])
+	}
+	
+	onQueryparam(){
+		this.router.navigate(['/queryparameter'],{
+			queryParams:this.json
+		})
+	}
+	
+3 Child routes
+	product component
+		1 details
+		2 listproduct
+		3 updateproduct
+		
+	app-routing.ts
+		{
+			path:"products",children:[
+				{
+					path:"",component:listproduct
+				},
+				{
+					path:"details",component:...
+				}
+			]
+		}
+
+home.html
+
+	<a routerLink="/products">Product
+	
+	product.html
+		<a routerLink="details">...
+		
+		localhost:4200/products/details
+
+Today's Lecture
+1 Lazy Loading
+	- code splitting
+2 create Custom Module
+3 create Custom Routing Module
+4 preloading
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
