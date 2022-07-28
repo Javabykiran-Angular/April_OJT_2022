@@ -1,0 +1,86 @@
+Last Lecture
+1 Lazy Loading
+	- code splitting
+2 create Custom Module
+	ng g module user --routing --flat
+	
+	user.module.ts
+	user-routing.module.ts
+	1 listofuser
+	2 detailuse
+	3 updateuse
+	user-routing.module.ts
+	const route:Route[]=[
+		{
+			path:"",component:Listofuser
+		},
+		{
+			path:"details",component:detail
+		},
+		{
+			path:"update",component:update
+		}
+	]
+	
+	Router.forChild(route)
+	
+	
+	app-routing.ts
+		[
+			{
+				path:"user",loadChildern:()=>import('./user/user.module').then(m=>m.UserModule)
+			}
+		]
+	
+	hom.html
+	
+	<a routerLink="/user">User
+	
+	listofuser.html
+	<a routerLink="detail">DetailComponent
+	....
+	localhost:4200/user/detail
+	detail.html
+	<a routerLink="/user/"
+	
+3 create Custom Routing Module
+4 preloading
+5 modifide routing 
+
+Today's Lecture
+1 Subject 
+2 BheviouralSubject
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
