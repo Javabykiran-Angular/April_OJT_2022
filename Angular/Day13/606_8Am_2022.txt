@@ -1,0 +1,56 @@
+Last Lecture
+1 Custom Pipe
+	
+2 PipeTransform
+3 transform
+	summary.pipe.ts
+		
+		@Pipe({
+			name:"summary"
+		})
+		export class summaryPipe implements PipeTransform{
+			transform(value:any,start:number=0,end:number=15){
+				let temp=(<string>value);
+				return temp.substring(start,end)+"..."
+			}
+		}
+
+custompipe.html
+	{{strdetails | summary:0:20}}
+
+Today's Lecture
+1 Service
+	- It is simple class
+	- code maintability
+	- code resuability
+	- to connect ur backend Server to frontend
+	- we can write only Business Logic
+	- service provide isolation from backend sever & frontend to end point http url
+2 Dependancy Injection
+	if u want use service effectiuvely u can go for DI 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
