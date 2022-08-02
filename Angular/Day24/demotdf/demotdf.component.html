@@ -1,0 +1,48 @@
+
+<div class="container">
+    <div class="row">
+          <div class="col-12">
+
+
+              <form #f="ngForm">
+                  {{f.value|json}}
+              <div class="form-group">
+                  <label for="">Username::</label>
+                  <input type="text" ngModel name="myusername"
+                    #username="ngModel" required minlength="4"
+                    pattern="admin"
+                  class="form-control" placeholder="Enter the Username">
+
+                  <div class="alert alert-danger" 
+                  *ngIf="username.touched && !username.valid" >
+                      ** Please Enter the username
+                    <div *ngIf="username.errors.minlength">
+                          ** Enter minimum {{username.errors.minlength.requiredLength}} character as a username
+                    </div>
+                    <div *ngIf="username.errors.pattern">
+                          ** Enter the appropriate Pattern 
+                    </div>
+
+                  </div>
+
+              </div>
+              <!-- close form-group -->
+
+              <div class="form-group">
+                  <label for="">Comment::</label>
+                  <textarea placeholder="Enter the comment "  ngModel name="comment" #comment="ngModel" required
+                   class="form-control" id="" cols="30" rows="5"></textarea>
+
+                    <div class="alert alert-danger" *ngIf="comment.touched && comment.invalid">
+                          ** Enter the Comment 
+                    </div>
+              </div>
+          <!-- close form-group -->
+                <br>
+                <button [disabled]="!f.valid" class="btn btn-outline-success">Submit</button>
+
+              </form>
+          </div>
+    </div>
+
+</div>

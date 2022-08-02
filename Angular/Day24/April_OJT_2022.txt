@@ -1,0 +1,85 @@
+Last Lecture
+1 Overview Of Bootstrap
+	- to make ur application is attractive
+	- redaymade template
+	- to make ur application responsive(According to display size=> screen width)
+	
+2 Basic Grid system of bootstrap
+		col,col-sm,col-md,...
+		
+		row=> create row
+		
+		div class="container">
+			div class="row">
+				div class="col-sm-4 col-md-6">
+					<table class="table table-bordered">
+					...
+				</div>
+				<div class="col-sm-8 col-md-6">
+				
+					div class="form-group">
+						lable> username
+						<input class="form-control">
+						.....
+						
+						<button class="btn btn-success">Login
+	
+3 Integration of bootstrap
+	1 online cdn 
+	2 offline use
+		npm install bootstrap@4.6 --save
+		style.css
+		@import '~bootstrap/dist/css/bootstrap.css';
+		
+
+Today's Lecture
+1 Template Driven Form
+	- all validation is done on view file
+	- login,signup,f/b,reg.
+	
+2 FormControl
+	1 valid => true/false 
+	2 invalid => true /false
+	3 touched => true
+	4 pristine => true
+	5 dirty  => true
+	6 errors => it is object 
+3 steps
+	1 create a instance of FormControl=> use ngModel & html name attribute u have use 
+	2 create templ.ref. variable & assign it ngModel
+	3 if u have to use errors for validation purpose then u have to use required attribute & that required attribute is of html 
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
