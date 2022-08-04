@@ -1,0 +1,113 @@
+Last Lecture
+1 Continue TDf
+2 ngValue
+3 ngSubmit
+
+Today's Lecture
+
+
+Employee & country
+
+registeration
+ id - primary -> autoincrement
+ username -> varchar(50)
+ password -> varchar(50)
+ emailid -> varchar(200) -> unique
+ mobile no -> varchar(25)
+ gender	   -> varchar(15)
+ createdDate -> DateTime
+ CreatedBy  -> varchar(100)
+ 
+ entity class
+ 
+ @Entity
+ class Registration{
+	
+	@Id
+	@GneratedValue(stargey=GenerationType.)
+	int id;
+	String username
+	
+	String emailid;
+	.....
+	
+	Date createdDate;
+ }
+ // Login API 
+ 
+ 
+ @CrossOrigin
+ @RestController
+ class Controller{
+	
+		@PostMapping("/login")
+		public HashMap login(@RegestBody Registration reg){
+				
+			HashMap obj=service.login(reg);
+			return obj;			
+				
+		}
+ }
+ 
+ service.java
+ 
+	public HashMap login(Registration reg){
+				
+		Registration obj =dao.login(reg);
+	
+			HashMap map=new HashMap();
+			if(obj!=null){
+				map.put("msg","Valid User");
+				map.put("user",obj)
+				
+			}else
+			{
+				map.put("msg","Invalid User");
+				map.put("user",obj)
+			}
+			
+			return map;
+			
+	}
+ 
+ dao.java
+ 
+     public Registration  login(Registration reg){
+			.....
+			
+			return reg;
+	 }
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
